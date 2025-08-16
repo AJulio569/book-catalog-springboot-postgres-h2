@@ -42,10 +42,12 @@ Asegúrate de seguir cuidadosamente las instrucciones proporcionadas por la API 
    👉 [https://gutendex.com](https://gutendex.com)
 2. Usarla de la siguiente manera:
    - guardarla en `application.properties`
+     
    
    ```properties
          gutendex.api.url= https://gutendex.com/books/
    ```
+   
 --- 
 
 ## 🐘 Configuración de PostgreSQL (opcional)
@@ -89,7 +91,8 @@ Para mantener segura y flexible la conexión a la base de datos PostgreSQL, este
 1. Crea un archivo de configuración:
 
    `src/main/resources/application-postgres.properties`
-2. Copia y edita este contenido:
+   
+3. Copia y edita este contenido:
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/TU_NOMBRE_DE_BASE_DE_DATOS
@@ -111,14 +114,16 @@ Para levantar la app usando PostgreSQL, ejecuta con el siguiente perfil:
      ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres
 
 ```
+
 ### ⚙️ Configuración en `application.properties`
 
 Configura el perfil activo:
 
 ```propertis
      spring.profiles.active=postgres`
+
 ```
-___
+---
 
 ## ⚙️ Configuración del perfil H2 en memoria
 1. Crea un archivo de configuración:
@@ -133,7 +138,7 @@ spring.datasource.username=sa
 spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=create-drop
 ``` 
-___
+---
 
 ## 🚀 Activar perfil de H2 en memoria
 
@@ -150,15 +155,16 @@ Configura el perfil activo:
 ```propertis
      spring.profiles.active=dev
 ```
-___
+---
 
 ## 🧭 Menú principal (CLI)
 
 Al iniciar la aplicación, el usuario es recibido con un menú interactivo en consola que permite explorar todas las funcionalidades de la API. El diseño está pensado para ofrecer una experiencia clara, motivadora y visualmente atractiva.
-___
+---
 
 ### 📋 Vista del menú en consola
 
+<img width="773" height="505" alt="menu" src="https://github.com/user-attachments/assets/c9dcbbdb-7aff-4c0f-abb6-06df441575b7" />
 
 ### ✨ Características del menú
 - ✅ **Diseño visual con bordes decorativos y emojis** para facilitar la navegación.
